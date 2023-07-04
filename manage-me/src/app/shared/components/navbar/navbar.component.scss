@@ -1,4 +1,14 @@
 mat-toolbar{
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    span{
+        margin-left: 5%;
+    }
+
+    .menu{
+        margin-right: 10%;
+    }
 }
