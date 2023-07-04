@@ -1,0 +1,21 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "firstName": "John",
+            "lastName": "Doe",
+            "name": "Admin Pro",
+            "role": {
+                "name": "admin"
+            }
+        }
+    ],
+    
+    "projects": [
+        {
+            "id": 1,
+            "name": "Mobile application development",
+            "description": "A project focused on developing an existing mobile application, adding new features and improving performance and user interface."
+        }
+    ]
+}
