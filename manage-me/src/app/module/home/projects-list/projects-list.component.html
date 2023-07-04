@@ -1,1 +1,27 @@
-<p>projects-list works!</p>
+<div class="wrapper">
+    <div class="title-container">
+      <h3 class="page-title">ACTIVE PROJECT</h3>
+      <h4 class="page-subtitle">- {{ projectName }} -</h4>
+    </div>
+    <div class="wrapper-table">
+        <table mat-table [dataSource]="dataSource" class="table">
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef> Id. </th>
+                <td mat-cell *matCellDef="let project"> {{project.id}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Project Name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let project"> {{project.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Description">
+                <th mat-header-cell *matHeaderCellDef> Description </th>
+                <td mat-cell *matCellDef="let project"> {{project.description}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+</div>
