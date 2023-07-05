@@ -11,13 +11,15 @@ import {MatButtonModule} from '@angular/material/button';
 import { ProjectsListComponent } from './module/home/projects-list/projects-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
+import { FunctionalitiesLitsComponent } from './module/functionalities-lits/functionalities-lits.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProjectsListComponent
+    ProjectsListComponent,
+    FunctionalitiesLitsComponent
   ],
   imports: [
     BrowserModule,
