@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource, MatTableDataSourcePaginator } from '@angular/material/table';
+import { Functionality } from 'src/app/shared/models/functionality.model';
 import { Project } from 'src/app/shared/models/project.model';
 import { ProjectService } from 'src/app/shared/services/project.service';
 
@@ -26,6 +27,7 @@ export class ProjectsListComponent {
   public ngOnInit(): void {
     this._getAllProjects();
   }
+
 
   private _getAllProjects(): void {
     this._projectService.getAllProjects().subscribe((projects: Project[]) => {

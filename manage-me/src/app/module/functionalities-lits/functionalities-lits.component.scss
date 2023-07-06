@@ -22,6 +22,17 @@
     margin: 0 17vw;
   }
 
+  .icon-wrapper {
+    padding: 0 25px 10px;
+    text-align: center;
+  
+    .add-icon {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
   .wrapper-table {
     display: flex;
     justify-content: center;
@@ -68,24 +79,6 @@
     }
   }
   
-  .icon-wrapper {
-    padding: 0 25px 10px;
-    text-align: center;
-  
-    .add-icon {
-      cursor: pointer;
-      border: none;
-      background-color: transparent;
-      transform: rotate(0);
-      transition: 0.5s;
-  
-      &:hover {
-        transform: scale(1.1);
-        transform: rotate(360deg);
-      }
-    }
-  }
-  
   .mat-mdc-table tbody,
   .mat-mdc-table tfoot,
   .mat-mdc-table thead,
@@ -107,11 +100,14 @@
   
   .red-alert-todo {
     background-color: #ff0000;
+    padding: 5px;
   }
   .orange-alert-doing {
     background-color: #e69602;
+    padding: 5px;
   }
   .green-alert-done {
     background-color: #27ce3e;
+    padding: 5px;
   }
   
