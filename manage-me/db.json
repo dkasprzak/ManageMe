@@ -21,59 +21,43 @@
     {
       "id": 1,
       "projectId": 1,
-      "name": "Office designsssdd",
+      "name": "Office design",
       "description": "Developing architectural plans and furnishing designs for the office spaces in the new company headquarters.",
       "priority": "medium",
       "project": "Mobile application development",
-      "status": "todo",
+      "status": "doing",
       "tasks": [
         {
           "id": 1,
           "functionalityId": 1,
-          "name": "Research office design trends",
+          "name": "Research office design trendswdaadsadsdddddsdsdssddsdfdsfdfdf",
           "description": "Conduct research on current office design trends and gather inspiration for the new office design project.",
-          "priority": "medium",
+          "priority": "high",
           "taskBelongToFunctionality": "Office design",
           "predictedExecutionTime": "3 days",
           "state": "doing",
           "dateStart": "2023-06-26T22:00:00.000Z",
           "dateEnd": "2023-06-26T22:00:00.000Z",
           "userResponsibleForTask": [
-            "John Doe"
-          ],
-          "dateAdded": "2023-07-04"
-        },
-        {
-          "id": 2,
-          "functionalityId": 1,
-          "name": "Create office layout sketches",
-          "description": "Develop multiple office layout sketches considering different workspace configurations and team collaboration areas.",
-          "priority": "medium",
-          "taskBelongToFunctionality": "Office design",
-          "predictedExecutionTime": "5 days",
-          "state": "todo",
-          "dateStart": "2023-06-25",
-          "dateEnd": "2023-06-25",
-          "userResponsibleForTask": [
-            "John Doe"
+            "Admin Pro"
           ],
           "dateAdded": "2023-07-04"
         },
         {
           "id": 3,
           "functionalityId": 1,
-          "name": "Select furniture and fixtures",
-          "description": "Research and choose appropriate furniture and fixtures that align with the office design concept and meet functional requirements.",
-          "priority": "high",
+          "name": "Zrób To",
+          "description": "ddfddsasdf",
+          "priority": "medium",
           "taskBelongToFunctionality": "Office design",
-          "predictedExecutionTime": "2 days",
-          "state": "doing",
-          "dateStart": "2023-06-03T22:00:00.000Z",
-          "dateEnd": "2023-06-03T22:00:00.000Z",
+          "predictedExecutionTime": "10 days",
+          "state": "done",
+          "dateStart": "2023-07-05T22:00:00.000Z",
+          "dateEnd": "2023-07-11T22:00:00.000Z",
           "userResponsibleForTask": [
-            "John Doe"
+            "Admin Pro"
           ],
-          "dateAdded": "2023-07-04"
+          "dateAdded": "6/7/2023"
         }
       ]
     }

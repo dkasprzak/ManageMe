@@ -1,0 +1,73 @@
+<form class="wrapper" [formGroup]="addOrEditTaskForm">
+    <h1 class="text-center">{{ modalValues.isNewTask ? 'Add Task' : 'Edit Task' }}</h1>
+    <div class="first-column">
+      <mat-form-field class="field">
+        <mat-label>Task Name</mat-label>
+        <input type="text" matInput formControlName="name" />
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Date range</mat-label>
+        <mat-date-range-input [formGroup]="addOrEditTaskForm" [rangePicker]="picker">
+          <input matStartDate formControlName="dateStart" placeholder="Start date" />
+          <input matEndDate formControlName="dateEnd" placeholder="End date" />
+        </mat-date-range-input>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+    </div>
+  
+    <div class="second-column">
+      <mat-form-field class="field">
+        <mat-label>Assign Functionality</mat-label>
+        <mat-select formControlName="taskBelongToFunctionality">
+          <mat-option *ngFor="let functionality of modalValues.functionalities" [value]="functionality.name"
+            >{{ functionality.name | capitalLetterFirst }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>Assign User</mat-label>
+        <mat-select formControlName="userResponsibleForTask" multiple>
+          <mat-option *ngFor="let user of usersOptions" [value]="user.name">{{ user.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  
+    <div class="second-column">
+      <mat-form-field class="field">
+        <mat-label>Task State</mat-label>
+        <mat-select formControlName="state">
+          <mat-option *ngFor="let status of statuses" [value]="status.value"
+            >{{ status.value | capitalLetterFirst }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field class="field">
+        <mat-label>Priority</mat-label>
+        <mat-select formControlName="priority">
+          <mat-option *ngFor="let priority of priorities" [value]="priority.value"
+            >{{ priority.value | capitalLetterFirst }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field class="field">
+        <mat-label>Predicted Time</mat-label>
+        <input type="text" matInput formControlName="predictedExecutionTime" />
+      </mat-form-field>
+    </div>
+  
+    <div class="fourth-column">
+      <mat-form-field style="width: 94%; margin: 0 20px">
+        <mat-label>Description</mat-label>
+        <textarea class="textarea" matInput formControlName="description" placeholder="Description"></textarea>
+      </mat-form-field>
+    </div>
+  
+    <div class="wrapper-button">
+      <button class="btn2" (click)="save()">Save</button>
+      <button style="margin-left: 10px" *ngIf="!modalValues.isNewTask" class="btn1" (click)="deleteTask()">Delete</button>
+    </div>
+  </form>
+  

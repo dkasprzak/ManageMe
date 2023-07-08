@@ -1,0 +1,35 @@
+<div class="task-details">
+    <h2>Task Details</h2>
+    <ul>
+      <li>
+        <span class="label">Name:</span>
+        <span class="value">{{ taskInfo.task.name }}</span>
+      </li>
+      <li>
+        <span class="label">Description:</span>
+        <span class="value">{{ taskInfo.task.description }}</span>
+      </li>
+      <li>
+        <span class="label">Priority:</span>
+        <span class="value">{{ taskInfo.task.priority  }}</span>
+      </li>
+      <li>
+        <span class="label">Project:</span>
+        <span class="value">{{ taskInfo.projectName }}</span>
+      </li>
+      <li>
+        <span class="label">Functionality:</span>
+        <span class="value">{{ taskInfo.task.taskBelongToFunctionality }}</span>
+      </li>
+      <li>
+        <span class="label">Date Added</span>
+        <span class="value">{{ taskInfo.task.dateAdded }}</span>
+      </li>
+      <li>
+        <span class="label">Assigned Users:</span>
+  
+        <span class="value">{{ taskInfo.task.userResponsibleForTask.join(', ') }}</span>
+      </li>
+    </ul>
+  </div>
+  

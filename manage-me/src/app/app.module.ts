@@ -22,6 +22,14 @@ import { AddNewFunctionalityModalComponent } from './shared/components/add-new-f
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MoreInfoFunctionalityModalComponent } from './shared/components/more-info-functionality-modal/more-info-functionality-modal.component';
+import { TaskTableComponent } from './module/task-table/task-table.component';
+import { AddEditTaskModalComponent } from './shared/components/add-edit-task-modal/add-edit-task-modal.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +41,8 @@ import { MoreInfoFunctionalityModalComponent } from './shared/components/more-in
     ModalComponent,
     AddNewFunctionalityModalComponent,
     MoreInfoFunctionalityModalComponent,
+    TaskTableComponent,
+    AddEditTaskModalComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +59,12 @@ import { MoreInfoFunctionalityModalComponent } from './shared/components/more-in
     MatIconModule,
     BrowserAnimationsModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTooltipModule,
+    CdkAccordionModule,
+    DragDropModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent],
