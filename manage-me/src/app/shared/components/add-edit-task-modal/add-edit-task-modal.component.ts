@@ -44,7 +44,7 @@ export class AddEditTaskModalComponent implements OnInit {
     description: [`${!this.modalValues.isNewTask ? this.modalValues.description : ''}`, Validators.required],
     dateStart: [`${!this.modalValues.isNewTask ? this.modalValues.dateStart : ''}`],
     dateEnd: [`${!this.modalValues.isNewTask ? this.modalValues.dateEnd : ''}`],
-    state: [{ value: this.modalValues.state, disabled: !this.modalValues.isNewTask }, Validators.required],
+    state: [`${!this.modalValues.isNewTask ? this.modalValues.state : ''}`, Validators.required],
     taskBelongToFunctionality: [
       `${!this.modalValues.isNewTask ? this.modalValues.taskBelongToFunctionality : ''}`,
       Validators.required,

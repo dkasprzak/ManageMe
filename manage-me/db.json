@@ -4,7 +4,7 @@
       "id": 1,
       "firstName": "John",
       "lastName": "Doe",
-      "name": "Admin Pro",
+      "name": "John Doe",
       "role": {
         "name": "admin"
       }
@@ -21,7 +21,7 @@
     {
       "id": 1,
       "projectId": 1,
-      "name": "Office design",
+      "name": "User CRUD",
       "description": "Developing architectural plans and furnishing designs for the office spaces in the new company headquarters.",
       "priority": "medium",
       "project": "Mobile application development",
@@ -30,36 +30,62 @@
         {
           "id": 1,
           "functionalityId": 1,
-          "name": "Research office design trendswdaadsadsdddddsdsdssddsdfdsfdfdf",
-          "description": "Conduct research on current office design trends and gather inspiration for the new office design project.",
+          "name": "Add users list",
+          "description": "Please add users list",
           "priority": "high",
-          "taskBelongToFunctionality": "Office design",
-          "predictedExecutionTime": "3 days",
-          "state": "doing",
-          "dateStart": "2023-06-26T22:00:00.000Z",
-          "dateEnd": "2023-06-26T22:00:00.000Z",
+          "taskBelongToFunctionality": "User CRUD",
+          "predictedExecutionTime": "2 days",
+          "state": "todo",
+          "dateStart": "2023-07-07T22:00:00.000Z",
+          "dateEnd": "2023-07-30T22:00:00.000Z",
           "userResponsibleForTask": [
-            "Admin Pro"
+            "John Doe"
           ],
-          "dateAdded": "2023-07-04"
+          "dateAdded": "8/7/2023"
+        },
+        {
+          "id": 2,
+          "functionalityId": 1,
+          "name": "Posibility to add new user",
+          "description": "Posibility to add new user",
+          "priority": "medium",
+          "taskBelongToFunctionality": "User CRUD",
+          "predictedExecutionTime": "5 days",
+          "state": "doing",
+          "dateStart": "2023-06-30T22:00:00.000Z",
+          "dateEnd": "2023-07-15T22:00:00.000Z",
+          "userResponsibleForTask": [
+            "John Doe"
+          ],
+          "dateAdded": "8/7/2023"
         },
         {
           "id": 3,
           "functionalityId": 1,
-          "name": "Zrób To",
-          "description": "ddfddsasdf",
-          "priority": "medium",
-          "taskBelongToFunctionality": "Office design",
-          "predictedExecutionTime": "10 days",
-          "state": "done",
-          "dateStart": "2023-07-05T22:00:00.000Z",
-          "dateEnd": "2023-07-11T22:00:00.000Z",
+          "name": "Posibility to edit user",
+          "description": "Posibility to edit user",
+          "priority": "low",
+          "taskBelongToFunctionality": "User CRUD",
+          "predictedExecutionTime": "2 days",
+          "state": "todo",
+          "dateStart": "2023-06-30T22:00:00.000Z",
+          "dateEnd": "2023-07-07T22:00:00.000Z",
           "userResponsibleForTask": [
-            "Admin Pro"
+            "John Doe"
           ],
-          "dateAdded": "6/7/2023"
+          "dateAdded": "8/7/2023"
         }
       ]
+    },
+    {
+      "id": 2,
+      "projectId": 1,
+      "name": "Test",
+      "description": "Test test test test test test test test test test test test ",
+      "status": "doing",
+      "project": "Mobile application development",
+      "priority": "high",
+      "tasks": []
     }
   ]
 }

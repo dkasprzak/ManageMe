@@ -33,7 +33,7 @@ export class AddNewFunctionalityModalComponent {
     description: [`${!this.modalValues.isNewFunctionality ? this.modalValues.description : ''}`, Validators.required],
     status: [`${!this.modalValues.isNewFunctionality ? this.modalValues.status : ''}`, Validators.required],
     project: [{ value: this.modalValues.project, disabled: true }, Validators.required],
-    //owner: [{ value: this.modalValues.owner, disabled: true}, Validators.required],
+    owner: [{value: 'John Doe', disabled: true }, Validators.required],
     priority: [`${!this.modalValues.isNewFunctionality ? this.modalValues.priority : ''}`, Validators.required],
   });
 
